@@ -1,0 +1,40 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 19px;
+}
+button {
+  transition: $base-transition;
+}
+.container {
+  width: 100%;
+  max-width: 1216px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  @media screen and (max-width: $phone-lg) {
+    padding: 0;
+  }
+}
+.input {
+  width: 100%;
+  padding: 13px 8px 13px 48px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 100px;
+  background-image: url(/src/icon/search.svg);
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  &::placeholder {
+    text-align: center;
+  }
+  &:focus {
+    outline: #abc8ea 1px solid;
+  }
+}
